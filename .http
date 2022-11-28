@@ -1,0 +1,45 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Nguyen Manh Tuan",
+    "password": "1234546"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Nguyen Manh Tuan",
+    "password": "1234546"
+}
+###
+POST  http://localhost:5000/api/post/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzdlZDQ4NWI3M2FkYjVhZWIyYTNhN2IiLCJpYXQiOjE2NjkyNTYzMjV9.7Yb0K0-TYIFV4DsHuOHAaQnRmtC8mOrNK0YL_ePTFeE
+
+{
+    "tilte": "Bai dang cua Nguyen Manh Tuan",
+    "decription": "heloo2313232",
+    "url" : "paypal.com",
+    "status" : ""
+}
+###
+GET  http://localhost:5000/api/post/getpost
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzdlZDQ4NWI3M2FkYjVhZWIyYTNhN2IiLCJpYXQiOjE2NjkyNzgyNjh9.asBCIpilnev5HmmEbl22at4TDaRnG4krUt_zaKIkTYY
+
+###
+PUT http://localhost:5000/api/post/637ee1b92644e679b473daa7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzdlZDQ4NWI3M2FkYjVhZWIyYTNhN2IiLCJpYXQiOjE2NjkyNTkwOTd9.DbF2LtS3s_vK6UZKsrgmq-XGcsFY6300yWdVn_Sd-W4
+ 
+{
+    "tilte": "Bai dang cua Nguyen Quang Tuanfakeeeeeee",
+    "decription":"",
+    "url" : "shope.com",
+    "status" : ""
+}
+###
+DELETE http://localhost:5000/api/post/637f70f4d0fd1c167b86b38f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzdlZDQ4NWI3M2FkYjVhZWIyYTNhN2IiLCJpYXQiOjE2NjkyNTkwOTd9.DbF2LtS3s_vK6UZKsrgmq-XGcsFY6300yWdVn_Sd-W4
